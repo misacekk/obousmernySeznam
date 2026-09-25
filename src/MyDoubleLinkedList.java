@@ -40,15 +40,6 @@ class MyDoublyLinkedList {
     }
 
     public void removeAt(int index) {
-        if (head == null) {
-            System.out.println("Seznam je prázdný.");
-            return;
-        }
-        if (index < 0) {
-            System.out.println("Index nemůže být záporný.");
-            return;
-        }
-
         if (index == 0) {
             head = head.getNext();
             if (head == null) {
@@ -89,7 +80,7 @@ class MyDoublyLinkedList {
             System.out.println("Playlist je prázdný.");
             return;
         }
-        System.out.println("\n--- Názvy písní v playlistu ---");
+        System.out.println("--- Názvy písní v playlistu ---");
         Node current = head;
         int index = 1;
         while (current != null) {

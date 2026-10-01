@@ -11,6 +11,10 @@ class Node {
         return data;
     }
 
+    public void setData(Song data) {
+        this.data = data;
+    }
+
     public Node getNext() {
         return next;
     }
